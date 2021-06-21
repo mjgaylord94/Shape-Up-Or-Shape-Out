@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up Or Shape Out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="rectangle-form">
+        <label for="width">Width:</label>
+        <input type="text" name="width" id="rectangle-width" placeholder="Width">
+        <label for="height">Height:</label>
+        <input type="text" name="height" id="rectangle-height" placeholder="Height">
+        <button class="insert-button">Insert</button>
+    </form>
+    <form action="" id="square-form">
+        <label for="side">Side Length:</label>
+        <input type="text" name="side" id="square-length" placeholder="Length">
+        <button class="insert-button">Insert</button>
+    </form>
+    <form action="" id="circle-form">
+        <label for="radius">Radius Length:</label>
+        <input type="text" name="radius" id="circle-radius" placeholder="Radius">
+        <button class="insert-button">Insert</button>
+    </form>
+    <form action="" id="triangle-form">
+        <label for="height">Triangle Height:</label>
+        <input type="text" name="height" id="triangle-height" placeholder="Height">
+        <button class="insert-button">Insert</button>
+    </form>
+    <div class="shape-container"></div>
+    <div class="sidepanel">
+        <div class="shape-name">
+            <p class="sidepanel-title">Shape Name:</p>
+            <p class="sidepanel-generated" id="sidepanel-shape">0</p>
+        </div>
+        <div class="width">
+            <p class="sidepanel-title">Width:</p>
+            <p class="sidepanel-generated" id="sidepanel-width">0</p>
+        </div>
+        <div class="height">
+            <p class="sidepanel-title">Height:</p>
+            <p class="sidepanel-generated" id="sidepanel-height">0</p>
+        </div>
+        <div class="Radius">
+            <p class="sidepanel-title">Radius:</p>
+            <p class="sidepanel-generated" id="sidepanel-radius">0</p>
+        </div>
+        <div class="Area">
+            <p class="sidepanel-title">Area:</p>
+            <p class="sidepanel-generated" id="sidepanel-area">0</p>
+        </div>
+        <div class="Perimeter">
+            <p class="sidepanel-title">Perimeter:</p>
+            <p class="sidepanel-generated" id="sidepanel-perimeter">0</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
