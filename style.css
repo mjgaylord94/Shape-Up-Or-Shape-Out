@@ -1,5 +1,79 @@
-.shape-container {
+body {
+    background-color: lightgray;
+}
+
+.form-organizer {
+    margin: auto;
+    text-align: center;
+    font-size: large;
+}
+
+form {
+    padding-bottom: .5em;
+}
+
+fieldset {
+    border-color: black;
+    border-style: solid;
+    padding: .25em;
+}
+
+#rectangle-form {
+    background-color: green;
+}
+
+#square-form {
+    background-color: red;
+}
+
+#circle-form {
+    background-color: purple;
+}
+
+#triangle-form {
+    background-color: yellow;
+}
+
+.div-organizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#shape-container {
+    margin-top: .5em;
     height: 600px;
     width: 600px;
     background-color: cornflowerblue;
+}
+
+#sidepanel {
+    margin-top: .5em;
+    height: 600px;
+    width: 300px;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.sidepanel-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.rectangle {
+    background-color: green;
+}
+
+.square {
+    background-color: red;
+}
+
+.circle { 
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
 }
