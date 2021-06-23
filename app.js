@@ -19,8 +19,8 @@ sidepanelPerimeter = document.getElementById(`sidepanel-perimeter`)
 // Shape Class
 class Shape {
     constructor(width, height) {
-        this.width = width
-        this.height = height
+        this.width = parseInt(width)
+        this.height = parseInt(height)
         this.shape = document.createElement(`div`)
         this.randomPosition()
         shapeContainer.append(this.shape)
@@ -55,7 +55,7 @@ class Shape {
         } else if (this.shape.className === `circle`) {
             this.perimeter = (2 * Math.PI * (this.width / 2)).toFixed(2)
         } else if (this.shape.className === `triangle`) {
-            this.perimeter = (this.width + this.width + Math.hypot(this.width, this.width)).toFixed(2)
+            this.perimeter = (this.width + this.width + (Math.hypot(this.width, this.width))).toFixed(2)
         }
 
         sidepanelPerimeter.innerText = this.perimeter
