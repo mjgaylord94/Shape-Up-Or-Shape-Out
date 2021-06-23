@@ -15,34 +15,34 @@
             <fieldset>
                 <legend>Rectangle</legend>
                 <label for="width">Width:</label>
-                <input type="text" name="width" id="rectangle-width" placeholder="Width">
+                <input type="number" min="1" max="600" name="width" id="rectangle-width-input">
                 <label for="height">Height:</label>
-                <input type="text" name="height" id="rectangle-height" placeholder="Height">
-                <button class="insert-button" id="rectangle-button">Insert</button>
+                <input type="number" min="1" max="600" name="height" id="rectangle-height-input">
+                <button class="insert-button" id="rectangle-button" disabled>Insert</button>
             </fieldset>
         </form>
         <form action="" id="square-form">
             <fieldset>
                 <legend>Square</legend>
                 <label for="side">Side Length:</label>
-                <input type="text" name="side" id="square-length" placeholder="Length">
-                <button class="insert-button" id="square-button">Insert</button>
+                <input type="number" min="1" max="600" name="side" id="square-input">
+                <button class="insert-button" id="square-button" disabled>Insert</button>
             </fieldset>
         </form>
         <form action="" id="circle-form">
             <fieldset>
                 <legend>Circle</legend>
                 <label for="radius">Radius Length:</label>
-                <input type="text" name="radius" id="circle-radius" placeholder="Radius">
-                <button class="insert-button" id="circle-button">Insert</button>
+                <input type="number" min="1" max="300" name="radius" id="circle-input">
+                <button class="insert-button" id="circle-button" disabled>Insert</button>
             </fieldset>
         </form>
         <form action="" id="triangle-form">
             <fieldset>
                 <legend>Triangle</legend>
                 <label for="height">Triangle Height:</label>
-                <input type="text" name="height" id="triangle-height" placeholder="Height">
-                <button class="insert-button" id="triangle-button">Insert</button>
+                <input type="number" min="1" max="600" name="height" id="triangle-input">
+                <button class="insert-button" id="triangle-button" disabled>Insert</button>
             </fieldset>
         </form>
     </div>

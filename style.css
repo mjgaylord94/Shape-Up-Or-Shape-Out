@@ -45,6 +45,7 @@ fieldset {
     height: 600px;
     width: 600px;
     background-color: cornflowerblue;
+    position: relative;
 }
 
 #sidepanel {
@@ -61,19 +62,24 @@ fieldset {
 }
 
 .rectangle {
-    background-color: green;
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.75);
 }
 
 .square {
-    background-color: red;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.75);
 }
 
 .circle { 
-    background-color: purple;
+    position: absolute;
+    background-color: rgba(128, 0, 128, 0.75);
     border-radius: 50%;
 }
 
 .triangle {
+    position: absolute;
     width: 0;
     height: 0;
+    opacity: 75%;
 }
